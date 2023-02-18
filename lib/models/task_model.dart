@@ -50,7 +50,7 @@ class Task {
     );
   }
 
-  Map<String, dynamic> toMap() {
+  Map<String, dynamic> toJson() {
     return <String, dynamic>{
       'id': id,
       'title': title,
@@ -80,7 +80,7 @@ class Task {
     );
   }
 
-  String toJson() => json.encode(toMap());
+  
 
  
 
