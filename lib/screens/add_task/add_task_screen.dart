@@ -90,15 +90,17 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
   _addTaskToDb() async {
     int value = await taskController.addTask(
         task: Task(
+           title: _titleController.text,
             note: _noteController.text,
-            title: _titleController.text,
+           isCompleted: 0,
             date: DateFormat.yMd().format(_selectedDate),
             startDate: _startTime,
             endDate: _endTime,
+             color: _selectedColor,
             remind: _selectedRemind,
             repeat: _selectedRepeat,
-            color: _selectedColor,
-            isCompleted: 0));
+           
+            ));
     print('My id is ' + '$value');
   }
 
