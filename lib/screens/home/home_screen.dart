@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   _showBottomSheet(BuildContext context, Task task) {
     Get.bottomSheet(Container(
-      padding: EdgeInsets.all(10),
+      padding:const EdgeInsets.all(10),
       height: task.isCompleted == 1
           ? MediaQuery.of(context).size.height * 0.24
           : MediaQuery.of(context).size.height * 0.32,
@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Text(
           lable,
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style:const TextStyle(
             color: Colors.white,
           ),
         ),
@@ -112,12 +112,12 @@ class _HomeScreenState extends State<HomeScreen> {
             color: Get.isDarkMode ? Colors.white : Colors.black,
           ),
         ),
-        actions: [
+        actions: const[
           CircleAvatar(
             backgroundImage: NetworkImage(
                 'https://i.ex-cdn.com/mgn.vn/files/content/2022/08/25/one-piece-zoro-4-1606.jpg'),
           ),
-          const SizedBox(
+          SizedBox(
             width: 20,
           )
         ],
@@ -165,17 +165,17 @@ class _HomeScreenState extends State<HomeScreen> {
               selectionColor: primaryClr,
               selectedTextColor: Colors.white,
               dateTextStyle: GoogleFonts.lato(
-                  textStyle: TextStyle(
+                  textStyle: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w600,
                       color: Colors.grey)),
               dayTextStyle: GoogleFonts.lato(
-                  textStyle: TextStyle(
+                  textStyle:const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
                       color: Colors.grey)),
               monthTextStyle: GoogleFonts.lato(
-                  textStyle: TextStyle(
+                  textStyle:const TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
                       color: Colors.grey)),

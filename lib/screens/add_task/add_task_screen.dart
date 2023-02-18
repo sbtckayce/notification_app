@@ -101,7 +101,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
             repeat: _selectedRepeat,
            
             ));
-    print('My id is ' + '$value');
+    
   }
 
   @override
@@ -238,7 +238,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                       _selectedRepeat = value!;
                     });
                   },
-                  icon: Icon(
+                  icon:const Icon(
                     Icons.keyboard_arrow_down,
                     color: Colors.grey,
                   ),
@@ -269,7 +269,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                       Text(
                         'Color',
                         style: GoogleFonts.lato(
-                            textStyle: TextStyle(
+                            textStyle:const TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
                       ),
                       const SizedBox(
