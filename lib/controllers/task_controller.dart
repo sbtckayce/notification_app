@@ -5,7 +5,7 @@ import 'package:notification/models/task_model.dart';
 class TaskController extends GetxController {
   @override
   void onReady() {
-    // getTasks();
+     getTasks();
     super.onReady();
   }
 

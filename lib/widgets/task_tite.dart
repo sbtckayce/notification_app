@@ -12,7 +12,7 @@ class TaskTile extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(bottom: 10),
           padding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
-          width: MediaQuery.of(context).size.width * 0.8,
+          width: MediaQuery.of(context).size.width * 0.9,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
             color: _getBGClr(task?.color??0),

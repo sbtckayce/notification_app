@@ -56,7 +56,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     const SizedBox(
                       height: 10,
                     ),
-                    _bottomSheetButton(lable: 'Close', clr: darkGreyClr)
+                    _bottomSheetButton(lable: 'Close', clr: darkGreyClr,onTap: (){
+                      Get.back();
+                    })
                   ],
                 )
         ],
